@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: #cccccc;
+    min-height: 70px;
+    padding: 15px;
+}
+main{
+    background-color: #dddddd;
+    min-height: 300px;
+    padding: 7.5px 15px;
+}
+footer{
+    background-color: #cccccc;
+    min-height: 70px;
+    padding: 15px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px double #cccccc;
+    border-radius: 10px;
+}
+h1{
+    color: #1a9900;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.content{
+    color: #1a9900;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.data
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-top: 10px;
+}
+.login_box{
+    margin-bottom: 10px;
+}
+.login_box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.login{
+    text-align: center;
+    margin-top: 15px;
+}
+.login button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #309900;
+    border: none;
+    outline: none;
+}
+
+.add {
+    text-align: left;
+    margin-top: 15px;
+}
+.add button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #309900;
+    border: none;
+    outline: none;
+}
+.divide {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    text-decoration: none;
+    color: #309900;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.back {
+    color: #309900;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.error{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
