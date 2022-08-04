@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,9 +31,6 @@
                         <input name="password" type="password" placeholder="Password" required>
                     </div>
                     <div class="login_box">
-                        <input type="text" name="birthday" placeholder="Birthday" require>
-                    </div>
-                    <div class="login_box">
                         <input name="email" type="text" placeholder="Email" required>
                     </div>
                     
@@ -42,7 +40,7 @@
                         </button>
                     </div>
                     <div class='divide'></div>
-                    <a class='back' href="./">I had account! Login</a>
+                    <a class='link' href="./">I had account! Login</a>
                 </form>
             </div>
             </div>

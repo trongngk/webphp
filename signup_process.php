@@ -1,9 +1,9 @@
 <?php 
+    ob_start();
     include 'connect.php';
     $fullname = $_POST['name'];
     $username = $_POST['username'];
     $password =$_POST['password'];
-    $birthday =$_POST['birthday'];
     $email = $_POST['email'];
 
     $sql1 = "SELECT count(*) FROM data WHERE email='$email'";
@@ -23,9 +23,12 @@
         exit();
     }
     else {
-        $sql = "INSERT INTO `data` VALUES ('$fullname', '$username', '$password', '$birthday', '$email')";
+        $sql = "INSERT INTO `data` VALUES ('$fullname', '$username', '$password', '$email')";
         $query = mysqli_query($conn, $sql);
-        header("location:home.php");
+        session_start();
+        $_SESSION['username']=$username;
+        header("location:index.php?success=Register successfully");
     }
-    mysqli_close($conn)
+    mysqli_close($conn);
+    ob_end_flush();
 ?>

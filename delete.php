@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     include "connect.php";
     if(isset($_POST['remove'])){
         
@@ -8,5 +9,5 @@
     header("location:inside_page.php");
 
     }
+    ob_end_flush();
 ?>
-<!-- !BlueCyber{loginFB:Zec0}# -->

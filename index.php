@@ -14,6 +14,17 @@
                 
                 <form action="signin.php" method="post">
                     <h1>Login</h1>
+                    <div class="error">
+                    <?php
+                        if(isset($_GET['error'])){
+                            echo $_GET['error'];
+                        }
+                        if(isset($_GET['success'])){
+                            echo $_GET['success'];
+                        }
+                    ?>
+                    
+                    </div>
                     <div class="login_box">
                         <input name="username" type="text" placeholder="Username" required>
                     </div>
@@ -27,7 +38,7 @@
                         </button>
                     </div>
                     <div class='divide'></div>
-                    <a href="signup.php">Create an account</a>
+                    <a class="link" href="signup.php">Create an account</a>
                 </form>
             </div>
             </div>
