@@ -13,7 +13,7 @@
                 <form action="add_task.php" method="post">
                     <h1 class="tittle">Task</h1>
                     <div class="login_box">
-                        <input name="task" type="text" placeholder="Add task" required>
+                        <input name="task" type="text" placeholder="Add task" reqired>
                     </div>
                     
                         <div class="add">
@@ -32,10 +32,16 @@
                             if (mysqli_num_rows($result) > 0) 
                                 {
                                     while($row = mysqli_fetch_assoc($result)) {
-                                        echo $row["task"]. "<br>";
-                                    
+                                        echo $row["task"];
+                                    ?>
+                                    <form action="delete.php" method="POST">
+                                    <button class="remove" type="submit" name="remove" value=<?php echo $row['id']?> >Remove</button>
+                                </form>
+                                    <br>
+                                        
+                            <?php
                                     }
-                                    
+                                   
                                 } 
                         ?>
                     </div>  
