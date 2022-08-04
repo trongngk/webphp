@@ -9,5 +9,9 @@
     header("location:inside_page.php");
 
     }
+<<<<<<< HEAD
     ob_end_flush();
 ?>
+=======
+?>
+>>>>>>> ef1f452a3350c453e5e33a5bf84dfb0f26863eb9
