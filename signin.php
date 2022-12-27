@@ -4,7 +4,8 @@
     $username = $_POST['username'];
     $password =$_POST['password'];
 
-    $sql = "SELECT * FROM data WHERE username='$username' and password='$password'";
+    $sql = "SELECT * FROM data WHERE username= ? and password= ?";
+    $sql->bind_param("ss",$username,$password);
     $result = mysqli_query($conn, $sql);
 
     if(mysqli_num_rows($result)>0) {
